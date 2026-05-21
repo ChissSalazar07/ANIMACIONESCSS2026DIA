@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Visita Perú</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+  background: linear-gradient(to right, red 33%, white 33%, white 66%, red 66%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    text-align:center;
+    color:black;
+    font-size:40px;
+    font-weight:bold;
+    margin:20px;
+   
+}
+
+.contenedor{
+    width:800px;
+    height:300px;
+    position:relative;
+    margin:20px auto;
+    border:2px solid white;
+    overflow:hidden;
+    
+}
+
+.marco1,.marco2,.marco3,.marco4{
+    width:200px;
+    height:300px;
+    position:absolute;
+    top:0;
+    background-size:cover;
+}
+
+
+.marco1{
+    left:0;
+    animation: marco1 2s forwards;
+    background-image:url(img/mar.jpg);
+}
+
+@keyframes marco1{
+    0%{
+        top:-300px;
+        transform: rotateY(180deg);
+    }
+    50%{
+        top:300px;
+        transform: rotateY(90deg);
+    }
+    100%{
+        top:0;
+        transform: rotateY(0deg);
+    }
+}
+
+
+.marco2{
+    left:200px;
+    animation: marco2 2s forwards 2s;
+    background-image:url(img/costa.jpg);
+}
+
+@keyframes marco2{
+    0%{
+        top:-300px;
+        transform: rotateY(-180deg);
+    }
+    50%{
+        top:300px;
+        transform: rotateY(-90deg);
+    }
+    100%{
+        top:0;
+        transform: rotateY(0deg);
+    }
+}
+
+
+.marco3{
+    left:400px;
+    animation: marco3 2s forwards 3s;
+    background-image:url(img/selva.jpg);
+}
+
+@keyframes marco3{
+    0%{
+        top:-300px;
+        transform: rotateY(180deg);
+    }
+    50%{
+        top:300px;
+        transform: rotateY(90deg);
+    }
+    100%{
+        top:0;
+        transform: rotateY(0deg);
+    }
+}
+
+
+.marco4{
+    left:600px;
+    animation: marco4 2s forwards 4s;
+    background-image:url(img/sierra.jpg);
+}
+
+@keyframes marco4{
+    0%{
+        top:-300px;
+        transform: rotateY(-180deg);
+    }
+    50%{
+        top:300px;
+        transform: rotateY(-90deg);
+    }
+    100%{
+        top:0;
+        transform: rotateY(0deg);
+    }
+}
+.volver{
+    display:block;
+    margin-top:20px;
+    color:white;
+    font-size:25px;
+   
+    
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="titulo">
+    Regiones del Perú
+</div>
+
+<div class="contenedor">
+    <div class="marco1"></div>
+    <div class="marco2"></div>
+    <div class="marco3"></div>
+    <div class="marco4"></div>
+</div>
+<a href="../PROYECTO 4- ANIMACION POR PASOS/index.html" style="color: white;">Volver</a>
+</body>
+</html>
