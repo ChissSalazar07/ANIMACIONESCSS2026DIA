@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0%;
+                padding: 0px;
+            }
+            .contenedor{
+                width: 800px;
+                height: 300px;
+                border: 5px solid black;
+                margin: 0 auto;
+                position:relative; 
+                overflow: hidden;    
+
+            }
+            .cuadrito{
+                width: 100px;
+                height: 100px;
+                position: absolute;  
+                top:0px;
+                left:0px ;          
+                animation: cuadrito 4s infinite;
+
+            }
+             .abeja{
+                position: absolute;
+                width:100%;
+                z-index: 0;
+            }
+            
+            @keyframes cuadrito {
+
+                0%{
+                    top:0px;
+                    left: -100px;
+                    rotate: 45deg;
+                }
+                50%{
+                     top:200px;
+                    left: 350px;
+                    rotate: 0deg;
+                }
+                100%{
+                     top:0px;
+                    left: 800px;
+                    rotate: 45deg;
+
+                }
+               
+            }
+             .cuadrito2{
+                width: 100px;
+                height: 100px;
+                position: absolute;  
+                top:0px;
+                left:0px ;          
+                animation: cuadrito2 5s infinite 2s;
+
+            }
+             .abeja2{
+                position: absolute;
+                width:100%;
+                z-index: 0;
+            }
+            
+            @keyframes cuadrito2 {
+
+                0%{
+                    top:0px;
+                    left: -100px;
+                    rotate: 45deg;
+                }
+                50%{
+                     top:200px;
+                    left: 350px;
+                    rotate: 0deg;
+                }
+                100%{
+                     top:0px;
+                    left: 800px;
+                    rotate: 45deg;
+
+                }
+               
+            }
+           
+        .pradera{
+            position: absolute;
+            top:-450px;
+            left:0px;
+            width: 100%;
+            z-index:-1;
+            }    
+        .cielo{
+            position: absolute;
+            top:0px;
+            left:0px;
+            width: 100%;
+            z-index:-2;
+        }
+         .volver{
+           display:block;
+           margin-top:20px;
+           color:black;
+           font-size:16px;
+}
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="cuadrito">
+                <img class="abeja" src="img/abejita.gif" alt="">
+            </div>
+            <div class="cuadrito2">
+                <img class="abeja2" src="img/abejita2.webp" alt="">
+            </div>
+            <img class="pradera" src="img/pradera.png" alt="">
+            <img class="cielo" src="img/cielo.png" alt="">
+        </div>
+        <a href="../PROYECTO 3- VIDEO ROTATIVOS/index.html" style="color:black;">Volver</a>
+    </body>
+
+</html>
