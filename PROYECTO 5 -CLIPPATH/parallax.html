@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CLIPPATH SEMANA 6 - COMPLETO</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    background: white;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+
+.sombrero{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    top: 2px;
+    left: 140px;
+    background-image: url(img/sombrero.avif);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 3;
+}
+.cabeza{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 80px;
+    left: 140px;
+    background-image: url(img/cara.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(50%);
+    z-index: 1;
+}
+
+
+.cuerpo {
+    position: absolute;
+    width: 80px;
+    height: 150px;
+    top: 190px;
+    left: 160px;
+    background-image: url(img/polo.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    z-index: 3; /* Subimos el z-index para que se acople bien con los brazos */
+}
+.brazos{
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    top: 220px;
+    left: 100px;
+    background-color: burlywood;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    z-index: 2;
+}
+
+
+.zapato1{
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: 325px; 
+    left: 110px;
+    background-color: brown; 
+    clip-path: ellipse(50% 50% at 50% 50%);
+    z-index: 2; 
+}
+
+.zapato2 {
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    top: 325px; 
+    left: 198px;
+    background-color: brown;
+    clip-path: ellipse(50% 50% at 50% 50%);
+    z-index: 2; 
+}
+
+
+.cono{
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    top: 195px;
+    left: 285px;
+    background-image: url(img/cono.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    z-index: 3;
+}
+.helado1{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 185px;
+    left: 270px;
+    background-image: url(img/helado22.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(50%);
+    z-index: 4;
+}
+.helado2{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 185px;
+    left: 305px;
+    background-image: url(img/helado3.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(50%);
+    z-index: 4;
+}
+.helado3{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 160px;
+    left: 287px;
+    background-image: url(img/helado1.png);
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(50%);
+    z-index: 5; 
+}
+</style>
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="sombrero"></div>
+    <div class="cabeza"></div>
+    <div class="brazos"></div>
+    <div class="cuerpo"></div>
+    <div class="zapato1"></div>
+    <div class="zapato2"></div>
+    
+    <div class="cono"></div>
+    <div class="helado1"></div>
+    <div class="helado2"></div>
+    <div class="helado3"></div>
+</div>
+
+</body>
+</html>
