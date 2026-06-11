@@ -1,0 +1,54 @@
+
+        *{
+            padding:5px;
+            margin:0px;
+        }
+
+        body{
+            background:url("../img/fondo.jpg");
+            background-size:cover;
+            background-position:center;
+            
+        }
+
+        .contenedor{
+            
+            background-color:rgb(164, 217, 250);
+            width:400px;
+            height:200px;
+            border:1px solid black;
+            position:relative;
+            margin:0 auto;
+            overflow:hidden;
+        }
+
+        .cuadrito{
+            width:100px;
+            height:100px;
+            background-color:red;
+            position:absolute;
+            left:-500px;
+            top:50px;
+            animation:cuadrito 3s infinite ease-in;
+        }
+
+        @keyframes cuadrito{
+            from{
+                left:-100px;
+            }
+            to{
+                left:500px;
+            }
+        }
+
+        .volver{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:rgb(40, 17, 187);
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+  

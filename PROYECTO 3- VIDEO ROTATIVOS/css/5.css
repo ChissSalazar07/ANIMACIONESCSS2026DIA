@@ -1,0 +1,146 @@
+
+*{
+margin:0;
+padding:0;
+}
+
+        body{
+            background:url("../img/fondo.jpg");
+            background-size:cover;
+            background-position:center;
+            
+        }
+
+.contenedor{
+width:400px;            
+height:200px;             
+border:1px solid white;  
+background:black;        
+position:relative;        /* permite mover elementos internos */
+margin:40px auto;         /* centra el contenedor */
+overflow:hidden;          /* oculta lo que salga del cuadro */
+}
+
+.cuadrito{
+
+    position: absolute;
+    top:  20px;
+    left: 150px; 
+
+}
+
+
+.cuadrito img{
+    width: 100px;
+    height: 150px;
+    rotate: 5deg;
+    animation: cohete 1s infinite alternate linear;  
+}
+@keyframes cohete{
+    from{
+        rotate: 5deg;
+    }
+    to{
+        rotate: 10deg;
+    }
+
+}
+
+.estrellita{
+     width: 25px;
+    height: 25px;
+
+    position: absolute;
+    top:  0px;
+    left: 200;
+}
+    .cuadritoimg img{
+    rotate: 5deg;
+    animation: dbz 1s infinite alternate linear;    
+}
+        @keyframes estrella{
+            from{
+                rotate: 5deg;
+            }
+            to{
+                rotate: 10deg;
+            }
+        }
+
+.estrella{
+width:4px;              
+height:4px;
+background:white;   
+border-radius:50%;  
+position:absolute;
+animation:mover infinite linear;
+}
+
+.e1{
+top:10px;
+left:400px;
+animation-duration:2s;
+}
+.e2{
+top:30px;
+left:500px;
+animation-duration:3s;
+}
+.e3{
+top:50px;
+left:450px;
+animation-duration:4s;
+}
+.e4{
+top:70px;
+left:550px;
+animation-duration:2.5s;
+}
+.e5{
+top:90px;
+left:600px;
+animation-duration:3.5s;
+}
+.e6{
+top:110px;
+left:430px;
+animation-duration:2.2s;
+}
+.e7{
+top:130px;
+left:520px;
+animation-duration:4s;
+}
+.e8{
+top:150px;
+left:580px;
+animation-duration:3s;
+}
+.e9{
+top:170px;
+left:470px;
+animation-duration:2.8s;
+}
+.e10{
+top:190px;
+left:650px;
+animation-duration:3.7s;
+}
+
+@keyframes mover{
+from{
+left:650px;
+}
+to{
+left:-20px;
+}
+}
+ .volver{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:rgb(40, 17, 187);
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
