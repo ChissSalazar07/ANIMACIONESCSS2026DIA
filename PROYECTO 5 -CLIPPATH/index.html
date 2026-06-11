@@ -4,96 +4,25 @@
     <meta charset="UTF-8">
     <title>Animación CSS5</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background: url(img/fondo.jpg) no-repeat center center fixed;
-            background-size: cover;
-            text-align:center;
-            color:white;
-            /* Flexbox para centrar el contenido verticalmente si es necesario */
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        /* TITULO */
-        h1{
-            margin-top:30px;
-            font-size:35px;
-            text-shadow: 3px 3px 8px black;
-        }
-
-        /* CONTENEDOR */
-        .menu{
-            width:60%;
-            margin:30px auto;
-            max-width: 600px; /* Evita que se estire demasiado en pantallas gigantes */
-        }
-
-        /* CAJONES */
-        .opcion{
-            background: rgba(0, 200, 255, 0.7);
-            margin:15px 0;
-            padding:20px;
-            border-radius:15px;
-            transition: 0.3s ease;
-            cursor: pointer;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        /* EFECTO HOVER (Interactividad basada en tu modelo) */
-        .opcion:hover {
-            background: rgba(0, 150, 255, 0.9);
-            transform: translateY(-5px); /* Efecto de elevación */
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Estilo para los enlaces dentro de las opciones */
-        .opcion a {
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            display: block; /* Hace que todo el cajón sea clickeable */
-            width: 100%;
-        }
-        .volver{
-    display:block;
-    margin-top:20px;
-    color:white;
-    font-size:16px;
-}
-
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
     <h1>Animación CSS5</h1>
 
     <div class="menu">
-        
+
         <div class="opcion">
-            <a href="video.html">Muñeco en movimiento</a>
+            <a href="video.html" class="enlace">Muñeco en movimiento</a>
         </div>
 
-         <div class="opcion">
-            <a href="parallax.html">Video de Animacion</a>
+        <div class="opcion">
+            <a href="parallax.html" class="enlace">Video de Animación</a>
         </div>
 
-       
-        </div>
-    <a href="../index.html" style="color:white;">Volver</a>
-
-      
     </div>
+
+    <a href="../index.html" class="volver">Volver</a>
 
 </body>
 </html>
