@@ -1,0 +1,174 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue; 
+    
+}
+
+
+.contenedor{
+    position: relative;
+    width: 700px;   
+    height: 350px;  
+    
+   
+    background:url("../img/parque.avif");
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+
+.sombrero{
+    position: absolute;
+    width: 120px;
+    height: 100px;
+    top: 10px;
+    left: 250px;
+    background-image: url("../img/sombrero.avif");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 3;
+    animation: caerSombrero 3s ease-in forwards;
+}
+
+
+.cabeza{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 80px;
+    left: 250px;
+    background-image: url("../img/cara.png");
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(50%);
+}
+
+
+.cuerpo {
+    position: absolute;
+    width: 80px;
+    height: 150px;
+    top: 180px;
+    left: 270px;
+    background-image: url("../img/polo.jpg");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+
+.brazos{
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    top: 200px;
+    left: 200px;
+    background-color: burlywood;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+
+
+.zapato1{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 300px;
+    left: 230px;
+    background-color: brown;
+    clip-path: ellipse(50% 50%);
+    animation: moverPies 0.5s infinite alternate;
+}
+
+.zapato2{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 300px;
+    left: 310px;
+    background-color: brown;
+    clip-path: ellipse(50% 50%);
+    animation: moverPies 0.5s infinite alternate;
+}
+
+
+.cono{
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    top: 180px;
+    left: 450px;
+    background-image: url("../img/cono.png");
+    background-size: cover;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+
+.helado1, .helado2, .helado3{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    clip-path: circle(50%);
+}
+
+.helado1{
+    top: 170px;
+    left: 435px;
+    background-image: url("../img/helado22.png");
+    animation: caerHelado 2s ease-in forwards;
+}
+
+.helado2{
+    top: 170px;
+    left: 470px;
+    background-image: url("../img/helado3.png");
+    animation: caerHelado 2.2s ease-in forwards;
+}
+
+.helado3{
+    top: 145px;
+    left: 452px;
+    background-image: url("../img/helado1.png");
+    animation: caerHelado 2.4s ease-in forwards;
+}
+
+@keyframes caerHelado{
+    0%{ transform: translateY(0); }
+    100%{ transform: translateY(200px) rotate(90deg); opacity: 0; }
+}
+
+@keyframes caerSombrero{
+    0%{ transform: translateY(0); }
+    100%{ transform: translateY(200px) rotate(180deg); opacity: 0; }
+}
+
+@keyframes moverPies{
+    0%{ transform: translateY(0); }
+    100%{ transform: translateY(-10px); }
+}
+
+.volver{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:rgb(40, 17, 187);
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
