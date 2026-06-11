@@ -1,0 +1,191 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:cursive;
+    text-align:center;
+    background-image:url("../img/fondo.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+h1{
+    background-color:#328ffa;
+    color:white;
+    font-size:50px;
+    text-shadow:3px 3px 8px black;
+    padding:10px;
+    animation:titulo 3s infinite;
+}
+
+@keyframes titulo{
+    from{
+        color:blue;
+        font-size:10px;
+    }
+
+    to{
+        color:white;
+        font-size:50px;
+    }
+}
+
+
+.presentacion{
+    width:100%;
+    padding:20px;
+}
+
+
+.yo-img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border:4px solid white;
+
+    opacity:0;
+    animation:foto 2s forwards;
+}
+
+@keyframes foto{
+    from{
+        transform:translateY(-250px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+
+.texto{
+    width:800px;
+    margin:20px auto;
+    color:white;
+    font-size:20px;
+    text-shadow:3px 3px 8px black;
+
+    opacity:0;
+    animation:texto 2s forwards;
+    animation-delay:1.5s;
+}
+
+@keyframes texto{
+    from{
+        transform:translateX(-300px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+}
+
+
+.proyectos{
+    width:1100px;
+    height:800px;
+    margin:50px auto;
+    position:relative;
+}
+
+@keyframes aparecer{
+    from{
+        transform:translateY(150px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+
+.contenedor1,
+.contenedor2,
+.contenedor3,
+.contenedor4,
+.contenedor5,
+.contenedor6{
+    width:220px;
+    height:220px;
+    border:4px solid white;
+    border-radius:20px;
+
+    position:absolute;
+
+    background-size:cover;
+    background-position:center;
+
+    opacity:0;
+}
+
+
+.contenedor1{
+    top:0;
+    left:0;
+    background-image:url("../img/ajedrez.png");
+    animation:aparecer 1s forwards;
+}
+
+.contenedor2{
+    top:0;
+    left:440px;
+    background-image:url("../img/lisa.png");
+    animation:aparecer 1s forwards 0.5s;
+}
+
+.contenedor3{
+    top:0;
+    left:880px;
+    background-image:url("../img/abeja.webp");
+    animation:aparecer 1s forwards 1s;
+}
+
+
+
+.contenedor4{
+    top:420px;
+    left:0;
+    background-image:url("../img/cohete.jpg");
+    animation:aparecer 1s forwards 1.5s;
+}
+
+.contenedor5{
+    top:420px;
+    left:440px;
+    background-image:url("../img/clip.jpg");
+    animation:aparecer 1s forwards 2s;
+}
+
+.contenedor6{
+    top:420px;
+    left:880px;
+    background-image:url("../img/montaña.png");
+    animation:aparecer 1s forwards 2.5s;
+}
+
+
+
+.link{
+    position:absolute;
+    top:230px;
+    width:100%;
+    text-align:center;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    text-shadow:3px 3px 8px black;
+}
