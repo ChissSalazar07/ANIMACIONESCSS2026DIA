@@ -1,227 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Proyectos</title>
-
-<style>
-*{
-    padding:0;
-    margin:0;
-    
-}
-
-body{
-    font-family:cursive;
-    text-align:center;
-    background-image:url("img/fondo.jpg");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-}
-
-
-h1{
-    background-color:#328ffa;
-    color:white;
-    font-size:50px;
-    animation: titulo 3s infinite;
-    text-shadow: 3px 3px 8px black;
-}
-
-@keyframes titulo{
-    from{
-        color: blue;
-        font-size:10px;
-    }
-    to{
-        color:white;
-        font-size:50px;
-    }
-}
-
-
-h2{
-    width:100%;
-    background:#5dc9ff;
-    padding:20px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    
-    animation: subtitulo 3s forwards;
-    animation-delay:3s;
-}
-
-
-@keyframes subtitulo{
-    from{
-        transform: translateX(100%);
-        opacity:0;
-    }
-    to{
-        transform: translateX(0);
-        opacity:1;
-        color:white;
-    }
-}
-
-
-.yo-img{
-    position: center;
-    width: 160px;
-    height:160px;
-    object-fit:cover;
-    border:4px solid white;
-}
-
-
-.texto{
-    display: flex;
-    justify-content: center;    width:500px;
-    text-align:center;
-    color:white;
-    font-size:14px;
-    text-shadow: 3px 3px 8px black;
-}
-
-.contenedor{
-    width:60%; 
-    margin:30px auto;
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:15px;
-}
-
-.tarjeta{
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
-    transition:0.5s;
-}
-
-.tarjeta img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-}
-
-.tarjeta:hover{
-    transform:scale(1.05);
-    box-shadow:0 10px 25px rgba(0,0,0,0.5);
-}
-
-
-.contenido{
-    padding:10px;
-    text-align:center;
-}
-
-
-a{
-    text-decoration:none;
-    color:black;
-}
-
-
-.tarjeta:hover{
-    transform:scale(1.05);
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Mis Proyectos</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
 
-<h1>Mis Proyectos de Animación de Gráficos</h1>
+    <h1>Mis Proyectos de Animación de Gráficos</h1>
 
-<h2>
+   <div class="presentacion">
+
     <img src="img/yo.jpeg" class="yo-img">
 
     <div class="texto">
-        <p><b> Bienvenido a mi página de proyectos soy Crismell Salazar Huarhuachi</b></p>
+        <p><b>Bienvenido a mi página de proyectos, soy Crismell Salazar Huarhuachi.</b></p>
 
         <p>
-        En este espacio estoy subiendo y organizando todos los trabajos que voy desarrollando durante el curso de Animación de Gráficos. Aquí podrás encontrar cada uno de mis proyectos, donde aplico lo aprendido en clase como animaciones, efectos y diseño visual.
+            En este espacio estoy subiendo y organizando todos los trabajos que voy desarrollando durante el curso de Animación de Gráficos.
         </p>
 
         <p>
-        Esta página me permite ver mi progreso, mejorar mis habilidades y tener todo mi trabajo ordenado en un solo lugar. Aún sigo aprendiendo, así que poco a poco iré agregando más proyectos y mejorando los que ya he realizado.
+            Esta página me permite ver mi progreso, mejorar mis habilidades y tener todo mi trabajo ordenado en un solo lugar.
         </p>
     </div>
-</h2>
 
-<div>
+</div>
+
     <audio autoplay loop hidden>
-       <source src="img/cancion1.mp3" type="audio/mpeg">
+        <source src="img/cancion1.mp3" type="audio/mpeg">
     </audio>
-</div>
 
-<div class="contenedor">
+    <div class="proyectos">
 
-    <a href="PROYECTO 1- TABLERO AJEDREZ/index.html">
-        <div class="tarjeta">
-            <img src="img/ajedrez.png">
-            <div class="contenido">
-                <h3>Semana 1</h3>
-                <p>CSS Introducción</p>
+        <div class="contenedor1">
+            <div class="link">
+                <a href="PROYECTO 1- TABLERO AJEDREZ/index.html">
+                    Semana 1<br>CSS Introducción
+                </a>
             </div>
         </div>
-    </a>
 
-    <a href="PROYECTO 2- LISA SU/index.html">
-        <div class="tarjeta">
-            <img src="img/lisa.png">
-            <div class="contenido">
-                <h3>Semana 2</h3>
-                <p>Animaciones</p>
+        <div class="contenedor2">
+            <div class="link">
+                <a href="PROYECTO 2- LISA SU/index.html">
+                    Semana 2<br>Animaciones
+                </a>
             </div>
         </div>
-    </a>
 
-    <a href="PROYECTO 3- VIDEO ROTATIVOS/index.html">
-        <div class="tarjeta">
-            <img src="img/abeja.webp">
-            <div class="contenido">
-                <h3>Semana 3</h3>
-                <p>Movimiento</p>
+        <div class="contenedor3">
+            <div class="link">
+                <a href="PROYECTO 3- VIDEO ROTATIVOS/index.html">
+                    Semana 3<br>Movimiento
+                </a>
             </div>
         </div>
-    </a>
 
-    <a href="PROYECTO 4- ANIMACION POR PASOS/index.html">
-        <div class="tarjeta">
-            <img src="img/cohete.jpg">
-            <div class="contenido">
-                <h3>Semana 4</h3>
-                <p>Animación por pasos</p>
+        <div class="contenedor4">
+            <div class="link">
+                <a href="PROYECTO 4- ANIMACION POR PASOS/index.html">
+                    Semana 4<br>Animación por pasos
+                </a>
             </div>
         </div>
-    </a>
 
-    <a href="PROYECTO 5 -CLIPPATH/index.html">
-        <div class="tarjeta">
-            <img src="img/clip.jpg">
-            <div class="contenido">
-                <h3>Semana 5</h3>
-                <p>ClipPath</p>
+        <div class="contenedor5">
+            <div class="link">
+                <a href="PROYECTO 5 -CLIPPATH/index.html">
+                    Semana 5<br>ClipPath
+                </a>
             </div>
         </div>
-    </a>
 
-    <a href="PROYECTO 6-PARALLAX/index.html">
-        <div class="tarjeta">
-            <img src="img/montaña.png">
-            <div class="contenido">
-                <h3>Semana 6</h3>
-                <p>Parallax</p>
+        <div class="contenedor6">
+            <div class="link">
+                <a href="PROYECTO 6-PARALLAX/index.html">
+                    Semana 6<br>Parallax
+                </a>
             </div>
         </div>
-    </a>
 
-</div>
+    </div>
 
 </body>
 </html>
